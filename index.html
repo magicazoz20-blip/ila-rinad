@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>إلى ريناد ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg1:#fff5fa;--bg2:#f6eeff;--bg3:#ffe6f1;
+  --card:rgba(255,255,255,.72);--card-b:rgba(255,255,255,.9);
+  --ink:#4a2a55;--ink-soft:#7a5a86;
+  --pink:#ff6fa5;--pink-d:#e0457f;--violet:#a98bf0;--violet-d:#7d5bd6;
+  --shadow:0 18px 50px rgba(169,139,240,.25);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg1:#2a1733;--bg2:#1f1535;--bg3:#34183f;
+    --card:rgba(60,35,80,.6);--card-b:rgba(255,255,255,.12);
+    --ink:#fbeaff;--ink-soft:#d8bfe6;
+    --shadow:0 18px 50px rgba(0,0,0,.4);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;height:100%}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  font-family:'Tajawal',system-ui,sans-serif;color:var(--ink);line-height:2;
+  background:linear-gradient(160deg,var(--bg1),var(--bg2) 50%,var(--bg3));
+  background-attachment:fixed;overflow-x:hidden;min-height:100%;
+}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.float{position:absolute;bottom:-60px;opacity:0;animation:rise linear forwards;will-change:transform}
+@keyframes rise{
+  0%{transform:translateY(0) translateX(0) rotate(0);opacity:0}
+  10%{opacity:.85}
+  50%{transform:translateY(-55vh) translateX(25px) rotate(15deg)}
+  100%{transform:translateY(-115vh) translateX(-20px) rotate(-15deg);opacity:0}
+}
+.orb{position:fixed;border-radius:50%;filter:blur(70px);z-index:0;pointer-events:none;animation:drift 16s ease-in-out infinite alternate}
+.o1{width:320px;height:320px;background:#ffb6d5;top:-80px;right:-80px;opacity:.5}
+.o2{width:380px;height:380px;background:#cdb8ff;bottom:-120px;left:-100px;opacity:.5;animation-delay:-6s}
+@keyframes drift{to{transform:translate(40px,30px) scale(1.15)}}
+
+main{position:relative;z-index:1}
+section{min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:70px 20px}
+.card{
+  width:min(720px,100%);background:var(--card);border:1px solid var(--card-b);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-radius:32px;padding:clamp(28px,6vw,56px);box-shadow:var(--shadow);text-align:center;
+}
+.reveal{opacity:0;transform:translateY(40px) scale(.97);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal .stagger{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in .stagger{opacity:1;transform:none}
+.reveal.in .stagger:nth-child(2){transition-delay:.25s}
+.reveal.in .stagger:nth-child(3){transition-delay:.5s}
+.reveal.in .stagger:nth-child(4){transition-delay:.75s}
+
+h1,h2{font-family:'Aref Ruqaa',serif;font-weight:700;line-height:1.6;
+  background:linear-gradient(90deg,var(--pink-d),var(--violet-d));-webkit-background-clip:text;background-clip:text;color:transparent}
+h1{font-size:clamp(2rem,7vw,3.6rem);margin-bottom:14px}
+h2{font-size:clamp(1.6rem,5vw,2.5rem);margin-bottom:18px}
+p{font-size:clamp(1.05rem,2.6vw,1.25rem);color:var(--ink-soft);font-weight:400}
+.sub{font-size:clamp(1.1rem,3vw,1.4rem)}
+.emoji{font-size:2.6rem;display:inline-block;margin-bottom:8px;animation:beat 1.8s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.18)}30%{transform:scale(1)}45%{transform:scale(1.12)}}
+.hero .card{background:linear-gradient(145deg,var(--card),rgba(255,214,232,.35))}
+.scroll{margin-top:30px;font-size:1rem;color:var(--violet-d);animation:bob 2s ease-in-out infinite;display:inline-block}
+@keyframes bob{50%{transform:translateY(10px)}}
+.dots{display:flex;gap:10px;justify-content:center;margin:20px 0}
+.dots span{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--violet));animation:pulse 2s ease-in-out infinite}
+.dots span:nth-child(2){animation-delay:.3s}.dots span:nth-child(3){animation-delay:.6s}
+@keyframes pulse{50%{transform:scale(1.7);opacity:.5}}
+.btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:28px}
+button{
+  font-family:inherit;font-size:1.15rem;font-weight:700;color:#fff;border:0;cursor:pointer;
+  padding:14px 30px;border-radius:999px;min-height:52px;
+  background:linear-gradient(135deg,var(--pink),var(--violet));
+  box-shadow:0 10px 26px rgba(255,111,165,.4);transition:transform .25s,box-shadow .25s;
+}
+button.alt{background:linear-gradient(135deg,var(--violet),var(--pink))}
+button:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 16px 34px rgba(169,139,240,.5)}
+button:active{transform:scale(.97)}
+button:focus-visible{outline:3px solid var(--violet-d);outline-offset:3px}
+#reply{max-height:0;opacity:0;overflow:hidden;transition:max-height .9s ease,opacity .9s ease,margin .9s}
+#reply.show{max-height:520px;opacity:1;margin-top:30px}
+.reply-box{padding:24px;border-radius:24px;background:linear-gradient(145deg,rgba(255,182,213,.3),rgba(205,184,255,.3));border:1px dashed var(--pink)}
+.reply-box p{color:var(--ink)}
+.note{font-size:1rem;margin-top:12px;color:var(--ink-soft)}
+.end h2{margin-top:6px}
+.sig{margin-top:22px;font-size:2rem}
+.nav{position:fixed;left:14px;top:50%;transform:translateY(-50%);z-index:5;display:flex;flex-direction:column;gap:10px}
+.nav a{width:11px;height:11px;border-radius:50%;background:var(--violet);opacity:.35;transition:.3s;display:block}
+.nav a.on{opacity:1;background:var(--pink);transform:scale(1.5)}
+@media(max-width:600px){.nav{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal,.reveal .stagger{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div>
+<div id="fx" aria-hidden="true"></div>
+<nav class="nav" aria-label="الأقسام">
+  <a href="#s1"></a><a href="#s2"></a><a href="#s3"></a><a href="#s4"></a><a href="#s5"></a><a href="#s6"></a>
+</nav>
+
+<main>
+  <section id="s1" class="hero">
+    <div class="card reveal">
+      <div class="emoji stagger">💌</div>
+      <h1 class="stagger">ريناد، عندي لك كلام من القلب 🥹❤️</h1>
+      <p class="sub stagger">يمكن ما أعرف أعبّر بالكلام، عشان كذا قررت أسوي لك هالمكان الصغير.</p>
+      <span class="scroll stagger">اسحبي لتحت ⌄</span>
+    </div>
+  </section>
+
+  <section id="s2">
+    <div class="card reveal">
+      <h2 class="stagger">تتذكرين أيامنا؟ 🌸</h2>
+      <p class="stagger">تتذكرين الضحكات اللي كانت تطلع منا فجأة من غير سبب؟ والسوالف اللي نبدأها ببساطة ونكتشف إن الوقت راح وإحنا ما حسينا فيه؟</p>
+      <div class="dots stagger"><span></span><span></span><span></span></div>
+      <p class="stagger">كانت أيام بسيطة، بس فيها دفء ما ينعوّض، وكل ذكرى منها لسه عندي بمكانها الحلو.</p>
+    </div>
+  </section>
+
+  <section id="s3">
+    <div class="card reveal">
+      <h2 class="stagger">أشياء أبيك تفهمينها ✨</h2>
+      <p class="stagger">يا ريناد، مهما مر الوقت، ما نسيت صداقتنا ولا الأيام الحلوة. يمكن صارت بيننا مشكلة وابتعدنا فترة، لكن هذا ما يعني إن الذكريات اختفت.</p>
+      <p class="stagger" style="margin-top:14px">اشتقت لسوالفنا وضحكتك، وأتمنى نقدر نفهم بعض أكثر.</p>
+    </div>
+  </section>
+
+  <section id="s4">
+    <div class="card reveal">
+      <div class="emoji stagger">🤍</div>
+      <h2 class="stagger">اعتذار من القلب</h2>
+      <p class="stagger">إذا جرحتك أو ضايقتك في يوم من الأيام، أنا آسف. ما أبي أبرر لنفسي ولا أتجاهل اللي صار، بس أتمنى تعرفين إن صداقتك تعني لي الكثير.</p>
+    </div>
+  </section>
+
+  <section id="s5">
+    <div class="card reveal">
+      <h2 class="stagger">ريناد، عندي سؤال 🥺</h2>
+      <p class="stagger sub">تتوقعين نقدر نرجع نسولف ونضحك مثل أول؟</p>
+      <div class="btns stagger">
+        <button id="b1" data-k="1">أكيد، ليش لا؟ ❤️</button>
+        <button id="b2" data-k="2" class="alt">خلينا نبدأ من جديد 🌷</button>
+      </div>
+      <div id="reply" aria-live="polite">
+        <div class="reply-box">
+          <p id="rtext"></p>
+          <p class="note">وتأكدي إن اختيارك وراحتك محل احترامي دايماً، وخذي وقتك اللي تحتاجينه. 🌷</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="s6" class="end">
+    <div class="card reveal">
+      <div class="emoji stagger">🌟</div>
+      <h2 class="stagger">شكراً لأنك وصلتي للنهاية يا ريناد</h2>
+      <p class="stagger sub">أتمنى أشوف ضحكتك من جديد، وأتمنى تكون الأيام الجاية أجمل من اللي راحت. ❤️</p>
+      <div class="sig stagger">💗 ✨ 💜</div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  var fx=document.getElementById('fx');
+  var items=['❤️','💗','💖','💜','✨','⭐','🌸','💕'];
+  function spawn(burst){
+    var e=document.createElement('span');
+    e.className='float';
+    e.textContent=items[Math.floor(Math.random()*items.length)];
+    e.style.left=Math.random()*100+'vw';
+    e.style.fontSize=(14+Math.random()*24)+'px';
+    var d=9+Math.random()*9;
+    e.style.animationDuration=d+'s';
+    if(burst)e.style.animationDelay=(Math.random()*1.2)+'s';
+    fx.appendChild(e);
+    setTimeout(function(){e.remove()},(d+2)*1000);
+  }
+  for(var i=0;i<10;i++)setTimeout(spawn,i*400);
+  setInterval(function(){if(!document.hidden&&fx.children.length<28)spawn()},900);
+
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(x){if(x.isIntersecting)x.target.classList.add('in')});
+  },{threshold:.25});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+  var links=[].slice.call(document.querySelectorAll('.nav a'));
+  var secs=[].slice.call(document.querySelectorAll('section'));
+  var so=new IntersectionObserver(function(es){
+    es.forEach(function(x){
+      if(x.isIntersecting){
+        var i=secs.indexOf(x.target);
+        links.forEach(function(l,j){l.classList.toggle('on',i===j)});
+      }
+    });
+  },{threshold:.55});
+  secs.forEach(function(s){so.observe(s)});
+  links.forEach(function(l,i){l.addEventListener('click',function(e){e.preventDefault();secs[i].scrollIntoView({behavior:'smooth'})})});
+
+  var msgs={
+    '1':'يا فرحتي بردّك 🥹❤️ كلامك يعني لي كثير، وأوعدك أكون صديق يستاهل ضحكتك وسوالفك.',
+    '2':'يا حلاها من بداية 🌷 نبدأ بهدوء وخطوة خطوة، ونبني أيام جديدة أحلى من اللي فاتت.'
+  };
+  var reply=document.getElementById('reply'),rt=document.getElementById('rtext');
+  function pick(k,btn){
+    rt.textContent=msgs[k];
+    reply.classList.add('show');
+    var r=btn.getBoundingClientRect();
+    for(var i=0;i<22;i++){
+      var h=document.createElement('span');
+      h.className='float';
+      h.textContent=items[i%items.length];
+      h.style.left=((r.left+r.width/2)/window.innerWidth*100+(Math.random()*30-15))+'vw';
+      h.style.fontSize=(18+Math.random()*22)+'px';
+      h.style.animationDuration=(4+Math.random()*4)+'s';
+      h.style.animationDelay=(Math.random()*.8)+'s';
+      fx.appendChild(h);
+      (function(n){setTimeout(function(){n.remove()},9500)})(h);
+    }
+    setTimeout(function(){reply.scrollIntoView({behavior:'smooth',block:'center'})},300);
+  }
+  ['b1','b2'].forEach(function(id){
+    var b=document.getElementById(id);
+    b.addEventListener('click',function(){pick(b.dataset.k,b)});
+  });
+})();
+</script>
+</body>
+</html>
